@@ -1,0 +1,102 @@
+{
+    "name": "Public Setup",
+    "slug": "plugin_public_setup",
+    "class": "SSM\\Core\\PublicSetup",
+    "hooks": [
+        {
+            "type": "action",
+            "name": "wp_enqueue_scripts",
+            "function": "enqueueStyles"
+        },
+        {
+            "type": "action",
+            "name": "init",
+            "function": "addYearShortcode"
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "setFavicon"
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "doFacebookPixel",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "setupGoogleTagManager",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "wp_body_open",
+            "function": "addGoogleTagManagerNoScript"
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "setupGoogleSiteVerification",
+            "priority": 1
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "customHeadScripts",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "wp_footer",
+            "function": "customFooterScripts",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "injectInlineCss",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "wp_footer",
+            "function": "injectInlineJs",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "admin_notices",
+            "function": "saveReminderNotice"
+        },
+        {
+            "type": "filter",
+            "name": "show_admin_bar",
+            "function": "removeAdminBar"
+        },
+        {
+            "type": "action",
+            "name": "wp_footer",
+            "function": "replaceAdminBar",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "replaceMetaViewport"
+        },
+        {
+            "type": "action",
+            "name": "admin_head",
+            "function": "addUserbackScript",
+            "priority": 99
+        },
+        {
+            "type": "action",
+            "name": "wp_head",
+            "function": "addUserbackScript",
+            "priority": 99
+        }
+    ]
+}
