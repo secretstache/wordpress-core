@@ -23,7 +23,7 @@ class Core {
 	 */
 	public function __construct() {
 
-		$this->pluginName = 'ssm/wordpress-core';
+		$this->pluginName = 'secretstache/wordpress-core';
 		$this->loader = new Loader();
 
         $this->defineConstants();

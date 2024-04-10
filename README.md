@@ -12,5 +12,5 @@ A collection of modules to implement custom admin and public WordPress customiza
 Install via Composer:
 
 ```bash
-$ composer require ssm/wordpress-core
+$ composer require secretstache/wordpress-core
 ```
